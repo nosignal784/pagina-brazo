@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Teresa de Bolívar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="circuit-pattern"></div>
+
+    <header>
+        <h1 class="header-title">PROYECTO DE INVESTIGACIÓN, CREACIÓN - INNOVACIÓN | U.E.N. TERESA DE BOLÍVAR</h1>
+        <nav>
+            <button class="nav-btn active" data-page="inicio">INICIO</button>
+            <button class="nav-btn" data-page="equipo">EL EQUIPO</button>
+            <button class="nav-btn" data-page="piezas">PIEZAS</button>
+            <button class="nav-btn" data-page="galeria">GALERÍA</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INICIO PAGE -->
+        <div id="inicio" class="page active">
+            <div class="container">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <div class="logo-wrapper">
+                        <div class="glow-circle"></div>
+                        <div class="logo">
+                            <svg class="gear" viewBox="0 0 24 24" fill="none" stroke="#ffc107" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6M23 12h-6m-6 0H1"/>
+                                <path d="M20.49 3.51l-4.24 4.24m-4.5 4.5l-4.24 4.24M3.51 3.51l4.24 4.24m4.5 4.5l4.24 4.24"/>
+                            </svg>
+                            <svg class="bolt" viewBox="0 0 24 24" fill="#ffc107">
+                                <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Video -->
+                <div class="main-video-section">
+                    <div class="main-video-wrapper">
+                        <div class="media-box">
+    <video class="main-video" autoplay muted loop controls>
+        <source src="video/video1.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+</div>
+                    </div>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="bottom-grid">
+                    <!-- Mecanismo -->
+                    <div>
+                        <h2 class="section-title">MECANISMO EN ACCIÓN</h2>
+                        <div class="media-box">
+                            <div class="media-placeholder mechanism-video">imagen mecanismo</div>
+                        </div>
+                    </div>
+
+                    <!-- Galería de Proceso -->
+                    <div>
+                        <h2 class="section-title">GALERÍA DE PROCESO</h2>
+                        <div class="gallery-grid">
+                            <div class="media-box">
+                                <div class="media-placeholder gallery-item">imagen1</div>
+                            </div>
+                            <div class="media-box">
+                                <div class="media-placeholder gallery-item">imagen2</div>
+                            </div>
+                            <div class="media-box wide">
+                                <div class="media-placeholder gallery-item wide">imagen3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EQUIPO PAGE -->
+        <div id="equipo" class="page">
+            <h1 class="page-title">EL EQUIPO</h1>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">J</div>
+                    <h2 class="team-name">Juangel Becerra</h2>
+                    <div class="team-divider"></div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">R</div>
+                    <h2 class="team-name">Robert Carrasquel</h2>
+                    <div class="team-divider"></div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">H</div>
+                    <h2 class="team-name">Heber Martinez</h2>
+                    <div class="team-divider"></div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">I</div>
+                    <h2 class="team-name">Isaac Morillo</h2>
+                    <div class="team-divider"></div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">S</div>
+                    <h2 class="team-name">Santiago Nieto</h2>
+                    <div class="team-divider"></div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">G</div>
+                    <h2 class="team-name">Génesis Pinto</h2>
+                    <div class="team-divider"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PIEZAS PAGE -->
+        <div id="piezas" class="page">
+            <div class="parts-container">
+                <h1 class="page-title">PIEZAS</h1>
+
+                <div class="parts-image">
+                    <div class="parts-image-wrapper">
+                        <div class="media-box">
+                            <div class="media-placeholder parts-image-placeholder">imagen esquema</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="parts-list-container">
+                    <h2 class="parts-list-title">Lista de Componentes</h2>
+                    <ul class="parts-list">
+                        <li class="parts-item">
+                            <span class="parts-number">1</span>
+                            <span>31 cables jumper</span>
+                        </li>
+                        <li class="parts-item">
+                            <span class="parts-number">2</span>
+                            <span>4 servo motores</span>
+                        </li>
+                        <li class="parts-item">
+                            <span class="parts-number">3</span>
+                            <span>2 joysticks analógicos</span>
+                        </li>
+                        <li class="parts-item">
+                            <span class="parts-number">4</span>
+                            <span>1 placa Arduino UNO</span>
+                        </li>
+                        <li class="parts-item">
+                            <span class="parts-number">5</span>
+                            <span>1 protoboard</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- GALERÍA PAGE -->
+        <div id="galeria" class="page">
+            <div class="container">
+                <h1 class="page-title">GALERÍA</h1>
+                <div class="gallery-empty">
+                    <svg class="gallery-icon" viewBox="0 0 24 24" fill="none" stroke="#ffc107" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 1v6m0 6v6M23 12h-6m-6 0H1"/>
+                        <path d="M20.49 3.51l-4.24 4.24m-4.5 4.5l-4.24 4.24M3.51 3.51l4.24 4.24m4.5 4.5l4.24 4.24"/>
+                    </svg>
+                    <p class="gallery-text">Contenido en construcción...</p>
+                    <p class="gallery-subtext">Las fotos y videos se agregarán próximamente</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
