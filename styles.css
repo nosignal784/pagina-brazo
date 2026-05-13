@@ -186,6 +186,8 @@ main {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(255, 193, 7, 0.4);
+    width: 100%; /* ¡NUEVO! Permite que se adapte al celular o PC */
+    position: relative;
 }
 
 .media-placeholder {
