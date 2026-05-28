@@ -163,21 +163,14 @@ main {
     justify-content: center;
     border: 3px solid #ffc107;
     box-shadow: 0 0 30px rgba(255, 193, 7, 0.5), inset 0 0 20px rgba(255, 193, 7, 0.1);
+    overflow: hidden; /* IMPORTANTE: Asegura que la foto se recorte perfectamente en círculo */
 }
 
-.logo svg {
-    position: absolute;
-}
-
-.logo .gear {
-    width: 50px;
-    height: 50px;
-}
-
-.logo .bolt {
-    width: 35px;
-    height: 35px;
-    z-index: 2;
+/* Estilo corregido para tu imagen PNG */
+.project-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al círculo sin deformarla */
 }
 
 /* Video/Image Boxes */
@@ -186,7 +179,7 @@ main {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(255, 193, 7, 0.4);
-    width: 100%; /* ¡NUEVO! Permite que se adapte al celular o PC */
+    width: 100%; 
     position: relative;
 }
 
@@ -194,7 +187,7 @@ main {
 .media-box video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Evita que la foto/video se estire feo */
+    object-fit: cover; 
     display: block;
 }
 
